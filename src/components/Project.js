@@ -10,8 +10,8 @@ const projects = [
     description: "A React.js-based invoice generator for stalls to create, manage, and print/download detailed customer invoices with payment status, notes, and signature.",
     image: "/milonmotors.png",
     technologies: ["React", "Ag-Grid-React", "Pdfmake", ],
-    liveLink: "https://milonmotors.com/",
-    githubLink: "https://github.com/monaim3/invoice",
+    liveLink: "https://invoice-iota-ten.vercel.app/",
+    githubLink: "https://github.com/monaim3/Invoice-generator",
     color: "linear-gradient(120deg,  #B80F9D  0%, #B80F9D  50%, #611879 100%)"
   },
   {
