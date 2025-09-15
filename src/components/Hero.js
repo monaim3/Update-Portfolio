@@ -17,7 +17,7 @@ export default function Hero() {
             <h2 className="text-2xl md:text-3xl text-gray-300">HELLO</h2>
             <div className="space-y-2">
               <h1 className="text-4xl md:text-6xl font-bold text-white">
-                i'm Monaim Mukul a
+                I'm Monaim Mukul a
               </h1>
               <div className="text-4xl md:text-6xl font-bold">
                 <TypeAnimation
