@@ -149,7 +149,7 @@ export default function Header() {
                   <Linkedin className="h-5 w-5 text-[#ffffff]" />
                 </Link>
                 <Link
-                  href="github.com/monaim3"
+                  href="https://github.com/monaim3"
                   target="_blank"
                   className="bg-[#1e1e1e] rounded-full p-2 hover:bg-[#FF014F] transition-colors"
                 >

@@ -22,7 +22,7 @@ const Hire = () => {
                     </Link>
 
                     <Link
-                         href="https://drive.google.com/uc?export=download&id=1qOxqcFUXtGlZ1LM5vfS0gEp8n2CgvuyZ"
+                        href="https://drive.google.com/file/d/1u1s_tqmcC4ZCWAZN1r_WPIYE_w-j_UhP/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-primary border border-cyan-50 p-4 rounded-lg  justify-center ml-4"
