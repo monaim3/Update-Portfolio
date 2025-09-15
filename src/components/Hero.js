@@ -54,7 +54,7 @@ export default function Hero() {
 
               // className=" w-full z-20 relative"
             />
-            <div className="absolute  top-1/2 -translate-y-1/2 left-[20%]">
+            <div className="absolute  top-1/2 -translate-y-1/2 left-[10%] lg:left-[20%]">
               <h3 className="z-10 text-[44px] lg:text-[72px] font-bold text-white whitespace-nowrap relative animate-bounce">
                 WEB DEVELOPER
               </h3>
