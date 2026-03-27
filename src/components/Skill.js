@@ -15,7 +15,7 @@ const skills = [
     >
       <path d="M19.8 0L9.3 114.8 64 128l54.8-13.2L117.3 0H19.8zm82.1 37.1H42.3l1.3 14.6h56.6l-4.3 47.6L64 108.1l-31.9-8.8-2.1-24.5h14.6l1 11.7 18.3 5 18.3-5 2-23H30.8L27.5 24.6h73.6l.8 12.5z" />
     </svg>
-  ), color: "from-orange-500" },
+  ), color: "border-orange-500" },
   { name: "CSS3", icon: (
     <svg
       className="w-8 h-8 text-white"
@@ -26,7 +26,7 @@ const skills = [
       <path d="M19.8 0L9.3 114.8 64 128l54.8-13.2L117.3 0H19.8zm75.4 37.1H42.8l1.3 14.6h48.7l-3.9 43.4-24.9 6.9-24.8-6.9-1.7-18.9h14.5l.9 10.2 11.1 3.1 11.1-3.1 1.1-12.1H41.3L37.9 24.6h71.7l-2.4 12.5z" />
     </svg>
   ),
-   color: "from-blue-500" },
+   color: "border-blue-500" },
   { name: "JavaScript", icon: (
     <svg
     className="w-8 h-8 text-white"
@@ -45,9 +45,9 @@ const skills = [
     </g>
   </svg>
   ),
-   color: "from-yellow-500" },
-  { name: "React.js", icon: "⚛️", color: "from-cyan-500" },
-  { name: "Next.js", icon: "▲", color: "from-gray-500" },
+   color: "border-yellow-500" },
+  { name: "React.js", icon: "⚛️", color: "border-cyan-500" },
+  { name: "Next.js", icon: "▲", color: "border-gray-400" },
   {
     name: "Tailwind",
     icon: (
@@ -60,7 +60,7 @@ const skills = [
         <path d="M23.98 13.5c-5.16 0-8.56 2.58-10.21 7.73 2.05-2.58 4.33-3.63 6.84-3.15 1.49.3 2.57 1.42 3.8 2.69 2.22 2.28 4.8 4.93 10.6 4.93 5.16 0 8.56-2.58 10.21-7.73-2.05 2.58-4.33 3.63-6.84 3.15-1.49-.3-2.57-1.42-3.8-2.69-2.22-2.28-4.8-4.93-10.6-4.93Zm-10.21 11.27c-5.16 0-8.56 2.58-10.21 7.73 2.05-2.58 4.33-3.63 6.84-3.15 1.49.3 2.57 1.42 3.8 2.69 2.22 2.28 4.8 4.93 10.6 4.93 5.16 0 8.56-2.58 10.21-7.73-2.05 2.58-4.33 3.63-6.84 3.15-1.49-.3-2.57-1.42-3.8-2.69-2.22-2.28-4.8-4.93-10.6-4.93Z" />
       </svg>
     ),
-    color: "from-teal-500",
+    color: "border-teal-500",
   },
   { name: "Node.js", icon: (
     <svg
@@ -73,8 +73,8 @@ const skills = [
       <path d="m52.393 144.29 15.883-9.17c3.061 5.431 5.832 10.02 12.47 10.02 6.378 0 10.413-2.495 10.413-12.208V107.55h19.43v25.438c0 20.13-11.804 29.28-29.008 29.28-15.523 0-24.511-8.026-29.188-18.019Zm78.423-1.057 15.884-9.187c4.182 6.839 9.593 11.803 19.182 11.803 8.064 0 13.227-4.032 13.227-9.593 0-6.656-5.27-9.02-14.148-12.92l-4.85-2.078c-14.008-5.963-23.282-13.468-23.282-29.281 0-14.58 11.11-25.694 28.475-25.694 12.355 0 21.24 4.305 27.621 15.62l-15.138 9.716c-3.328-5.964-6.921-8.327-12.484-8.327-5.683 0-9.29 3.607-9.29 8.327 0 5.83 3.607 8.193 11.932 11.803l4.85 2.077c16.496 7.056 25.77 14.198 25.77 30.566 0 17.534-13.77 27.122-32.28 27.122-18.06 0-29.703-8.612-35.462-19.944Z"/>
     </svg>
   ),
-   color: "from-green-500" },
-  { name: "Firebase", icon: "🔥", color: "from-amber-500" },
+   color: "border-green-500" },
+  { name: "Firebase", icon: "🔥", color: "border-amber-500" },
   { name: "TypeScript", icon: (
     <svg
       className="w-8 h-8 text-white"
@@ -86,7 +86,7 @@ const skills = [
       <path d="M128.11 116.22h-19.51v69.59H87.77v-69.59H68.32V97.14h59.79v19.08zm64.02 41.3c-2.61-1.64-5.52-3.07-8.69-4.18-2.52-.89-4.43-1.66-5.71-2.33a7.68 7.68 0 0 1-2.58-2.34c-.55-.81-.83-1.76-.83-2.84 0-1.39.37-2.58 1.1-3.55a7.12 7.12 0 0 1 3.02-2.2c1.29-.51 2.73-.77 4.3-.77 2.93 0 5.7.67 8.32 2a21.67 21.67 0 0 1 6.8 5.35l11.44-13.58a28.97 28.97 0 0 0-10.06-7.86c-4.19-2.01-9.18-3.02-14.96-3.02-4.91 0-9.32.83-13.2 2.49a22.8 22.8 0 0 0-9.39 7.26 19.53 19.53 0 0 0-3.71 11.58c0 4.4.83 8.03 2.5 10.87 1.66 2.84 4.16 5.25 7.48 7.22 2.13 1.3 5.02 2.59 8.69 3.88 2.9.98 4.97 1.87 6.2 2.68 1.22.81 2.09 1.66 2.6 2.55.5.89.75 1.91.75 3.07 0 1.63-.42 2.98-1.26 4.04a6.84 6.84 0 0 1-3.32 2.35 15.03 15.03 0 0 1-5.13.78c-3.4 0-6.88-.59-10.43-1.77a26.18 26.18 0 0 1-9.65-5.51l-11.99 13.29c4.26 4.07 9.3 7.04 15.12 8.93 5.82 1.89 12.07 2.83 18.75 2.83 5.62 0 10.55-.8 14.79-2.4 4.24-1.6 7.6-3.86 10.08-6.8 2.49-2.94 4.24-6.25 5.26-9.94.66-2.45.99-4.96.99-7.52 0-5.7-1.3-10.29-3.91-13.77-2.61-3.47-6.02-6.36-10.24-8.66z" fill="#fff"/>
     </svg>
   ),
-   color: "from-blue-600" },
+   color: "border-blue-600" },
   { name: "Git", icon: (
     <svg
       className="w-8 h-8 text-white"
@@ -99,8 +99,8 @@ const skills = [
       />
     </svg>
   ),
-   color: "from-red-500" },
-  { name: "MongoDB", icon: "🍃", color: "from-green-600" },
+   color: "border-red-500" },
+  { name: "MongoDB", icon: "🍃", color: "border-green-600" },
   { name: "Redux", icon: (
     <svg className="w-8 h-8 text-white" viewBox="0 0 256 244" xmlns="http://www.w3.org/2000/svg">
     <g fill="#764ABC">
@@ -109,7 +109,7 @@ const skills = [
   </svg>
   
   ),
-   color: "from-purple-500" },
+   color: "border-purple-500" },
 ];
 
 const duplicatedSkills = [...skills, ...skills];
@@ -119,18 +119,16 @@ const SkillCard = ({ name, icon, color }) => {
     <div className="relative group shrink-0">
       <div
         className={`
-          w-48 h-32 rounded-xl 
-          bg-gradient-to-br ${color} to-black/50
-          border border-white/10 backdrop-blur-sm
-          hover:border-pink-500/50 transition-all duration-300
+          w-48 h-32 rounded-xl
+          bg-black/20 backdrop-blur-sm
+          border ${color}
+          transition-colors duration-300
           flex flex-col items-center justify-center gap-2
-          group-hover:scale-105 transform
+          group-hover:bg-white/5
         `}
       >
         <span className="text-3xl">{icon}</span>
         <span className="text-white font-medium text-lg">{name}</span>
-
-       
       </div>
     </div>
   );
@@ -176,6 +174,7 @@ export default function Skill() {
           <div className="flex justify-center items-center min-h-[200px] overflow-hidden">
             <motion.div
               className="flex gap-6"
+              style={{ willChange: "transform" }}
               animate={{
                 x: [0, -150 * skills.length],
               }}
