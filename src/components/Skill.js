@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import {
   SiHtml5,
-  SiCss3,
+  SiCss,
   SiJavascript,
   SiReact,
   SiNextdotjs,
@@ -24,7 +24,7 @@ const skills = [
   },
   {
     name: "CSS3",
-    icon: <SiCss3 className="w-10 h-10" style={{ color: "#1572B6" }} />,
+    icon: <SiCss className="w-10 h-10" style={{ color: "#1572B6" }} />,
     color: "border-blue-500",
   },
   {
