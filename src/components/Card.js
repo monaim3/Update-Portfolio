@@ -42,7 +42,7 @@ const Card = ({
         className={styles.card}
       >
         <div className="grid md:grid-cols-2 gap-0 items-stretch">
-          <div className="hidden md:flex items-center justify-center p-6">
+          <div className="hidden md:flex items-center justify-center p-4 2xl:p-3">
             <Image
               src={`${image}`}
               alt="image"
@@ -51,7 +51,7 @@ const Card = ({
               className={`w-full h-auto ${objectFit}`}
             />
           </div>
-          <div className="p-8 md:p-12 flex flex-col justify-center">
+          <div className="p-8 md:p-10 2xl:p-8 2xl:py-6 flex flex-col justify-center">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
               {name}
             </h3>
