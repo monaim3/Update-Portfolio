@@ -25,7 +25,7 @@ const projects = [
     liveLink: "https://smart-sohay.vercel.app/",
     githubLink: "https://github.com/monaim3/Smart-Sohay-Home",
     color: "linear-gradient(120deg, #0F4C75 0%, #1B262C 50%, #0F3460 100%)",
-    objectFit: "object-contain",
+    objectFit: "object-cover",
   },
   {
     name: "Crazy Devs",
