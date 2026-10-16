@@ -87,7 +87,7 @@ const SkillCard = ({ name, icon, color }) => {
       <div
         className={`
           w-48 h-32 rounded-xl
-          bg-black/20 backdrop-blur-sm
+          bg-black/30
           border ${color}
           transition-colors duration-300
           flex flex-col items-center justify-center gap-2
@@ -107,47 +107,42 @@ const SkillCard = ({ name, icon, color }) => {
 
 export default function Skill() {
   return (
-    <section
-      className="py-10 relative overflow-hidden bg-gradient-to-b from-gray-900 to-#6C0E2A "
-      style={{
-        backgroundImage:
-          "linear-gradient(120deg, #151414 0%, #151414 50%, #6C0E2A 100%)",
-      }}
-    >
-      <div className="absolute inset-0 " />
-      <div className="absolute inset-0 " />
-
+    <section className="py-16 relative overflow-hidden section-bg">
       <div className="max-w-7xl mx-auto px-4 relative">
-        <div className="text-center ">
+        <div className="text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5 }}
             className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white to-pink-500 bg-clip-text text-transparent"
           >
-            Technical Arsenal
+            Tech Stack
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-4 text-gray-400 max-w-2xl mx-auto"
           >
-            Mastering the tools that shape the digital frontier
+            Tools and technologies I use to build for the web
           </motion.p>
         </div>
 
-        <div className="relative  mx-auto overflow-hidden">
-          {/* Fade Edges */}
-          <div className="absolute left-0 top-0 bottom-0 w-32  z-10" />
-          <div className="absolute right-0 top-0 bottom-0 w-32 z-10" />
-
-          <div className="flex justify-center items-center min-h-[200px] overflow-hidden">
+        <div
+          className="relative mx-auto overflow-hidden mt-6"
+          style={{
+            maskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+            WebkitMaskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+          }}
+        >
+          <div className="flex items-center min-h-[200px]">
             <motion.div
-              className="flex gap-6"
+              className="flex gap-6 pr-6 w-max"
               style={{ willChange: "transform" }}
               animate={{
-                x: [0, -150 * skills.length],
+                x: ["0%", "-50%"],
               }}
               transition={{
                 x: {

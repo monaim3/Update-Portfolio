@@ -1,12 +1,39 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-body{
+@theme {
+  --color-primary: #FA024F;
+  --color-primary-foreground: #ffffff;
+}
+
+/* Lenis handles smooth scrolling; native smooth scroll fights it and stutters */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
   font-family: var(--font-rajdhani), sans-serif;
+  background-color: #000;
+  color: #fff;
 }
-.primary-color{
-  background-color: #FA024F;
+
+.primary-color {
+  background-color: var(--color-primary);
 }
-.text-primary{
-  color: #FA024F;
+
+.section-bg {
+  background-image: linear-gradient(120deg, #151414 0%, #151414 50%, #6C0E2A 100%);
 }

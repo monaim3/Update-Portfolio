@@ -1,8 +1,7 @@
 "use client";
 import Image from "next/image";
 import styles from "./style.module.css";
-import { useTransform, motion, useScroll } from "framer-motion";
-import { useRef } from "react";
+import { useTransform, motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 
 const Card = ({
@@ -12,84 +11,73 @@ const Card = ({
   image,
   liveLink,
   githubLink,
-  color,
   progress,
   range,
   targetScale,
   technologies,
-  objectFit = "object-cover",
 }) => {
-  const container = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: container,
-    offset: ["start end", "start start"],
-  });
-
-  const imageScale = useTransform(scrollYProgress, [0, 1], [2, 1]);
   const scale = useTransform(progress, range, [1, targetScale]);
-  const isGradient = color.startsWith("linear-gradient");
 
   return (
-    <div ref={container} className={styles.cardContainer}>
+    <div className={styles.cardContainer}>
       <motion.div
         style={{
-          ...(isGradient
-            ? { backgroundImage: color }
-            : { backgroundColor: color }),
+          backgroundImage: "linear-gradient(135deg, #1c1a1b 0%, #151414 55%, #4a0a1e 100%)",
           scale,
           top: `calc(-5vh + ${i * 25}px)`,
         }}
         className={styles.card}
       >
-        <div className="grid md:grid-cols-2 gap-0 items-stretch">
-          <div className="hidden md:flex items-center justify-center p-4 2xl:p-3">
-            <Image
-              src={`${image}`}
-              alt="image"
-              width={600}
-              height={400}
-              className={`w-full h-auto ${objectFit}`}
-            />
+        <div className="grid md:grid-cols-2 gap-0 items-center h-full">
+          <div className="p-4 md:p-8">
+            <a
+              href={liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative block aspect-video overflow-hidden rounded-xl border border-white/10 group"
+            >
+              <Image
+                src={image}
+                alt={`${name} screenshot`}
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+              />
+            </a>
           </div>
-          <div className="p-8 md:p-10 2xl:p-8 2xl:py-6 flex flex-col justify-center">
-            <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
+          <div className="px-6 pb-8 md:p-10 flex flex-col justify-center">
+            <span className="text-primary font-semibold tracking-widest text-sm mb-2">
+              {String(i + 1).padStart(2, "0")}
+            </span>
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6">
               {name}
             </h3>
-            <p className="text-white text-lg mb-8">{description}</p>
-            <div className="flex flex-wrap gap-3 mb-8">
-              {technologies.map((tech, j) => (
+            <p className="text-gray-300 text-base md:text-lg mb-6 md:mb-8">{description}</p>
+            <div className="flex flex-wrap gap-2 md:gap-3 mb-6 md:mb-8">
+              {technologies.map((tech) => (
                 <span
-                  key={j}
-                  className="px-4 py-2 text-sm rounded-full text-white"
-                  style={{
-                    backgroundImage:
-                      "linear-gradient(120deg, rgb(21, 20, 20) 0%, rgb(21, 20, 20) 50%, rgb(108, 14, 42) 100%)",
-                  }}
+                  key={tech}
+                  className="px-4 py-1.5 text-sm rounded-full text-white bg-primary/10 border border-primary/30"
                 >
                   {tech}
                 </span>
               ))}
             </div>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-3 md:gap-4">
               <a
                 href={liveLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 lg:py-3 text-white transition-colors duration-300 border-2 rounded-lg"
-                style={{ backgroundColor: color }}
+                className="flex items-center gap-2 px-5 py-3 text-white bg-primary rounded-lg hover:opacity-90 transition-opacity"
               >
                 <ExternalLink size={20} />
-                View Project
+                Live Demo
               </a>
               <a
                 href={githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-3 border-2 text-white rounded-lg transition-all duration-300"
-                style={{
-                  borderColor: color,
-                  color: color,
-                }}
+                className="flex items-center gap-2 px-5 py-3 border border-white/30 text-white rounded-lg hover:bg-white/10 transition-colors"
               >
                 <Github size={20} />
                 Code
