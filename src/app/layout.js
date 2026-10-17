@@ -12,29 +12,29 @@ const rajdhani = Rajdhani({
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 const description =
-  "Monaim Mukul — Frontend Developer in Dhaka building fast, responsive web apps with React, Next.js and Tailwind CSS.";
+  "Monaim Mukul — Frontend Engineer and Software Developer in Dhaka building fast, responsive web apps with React, Next.js and Tailwind CSS.";
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Monaim Mukul | Frontend Developer",
+    default: "Monaim Mukul | Frontend Engineer",
     template: "%s | Monaim Mukul",
   },
   description,
-  keywords: ["Monaim Mukul", "Frontend Developer", "React", "Next.js", "Portfolio", "Dhaka"],
+  keywords: ["Monaim Mukul", "Frontend Engineer", "Software Developer", "React", "Next.js", "Portfolio", "Dhaka"],
   authors: [{ name: "Monaim Mukul" }],
   openGraph: {
     type: "website",
     url: "/",
-    title: "Monaim Mukul | Frontend Developer",
+    title: "Monaim Mukul | Frontend Engineer",
     description,
-    images: [{ url: "/mukul2.png", width: 2160, height: 2160, alt: "Monaim Mukul" }],
+    images: [{ url: "/mukul-cutout.png", width: 1219, height: 1290, alt: "Monaim Mukul" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Monaim Mukul | Frontend Developer",
+    title: "Monaim Mukul | Frontend Engineer",
     description,
-    images: ["/mukul2.png"],
+    images: ["/mukul-cutout.png"],
   },
 };
 

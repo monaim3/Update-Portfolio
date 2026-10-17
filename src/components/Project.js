@@ -5,6 +5,24 @@ import { useRef } from "react";
 
 const projects = [
   {
+    name: "QRCenter",
+    description:
+      "A full QR code platform: pick from 12 types (URL, vCard, PDF, Wi-Fi, menu and more), add content, then customize colors, frames and logos with a live phone preview. Includes Stripe payments.",
+    image: "/qr-center.png",
+    technologies: ["Next.js", "Redux Toolkit", "Stripe", "Tailwind CSS"],
+    liveLink: "https://qr-code-red-seven.vercel.app/generator",
+    githubLink: "https://github.com/monaim3/QR-Code",
+  },
+  {
+    name: "SafePath",
+    description:
+      "A full-stack Bengali/English safety map for Dhaka showing where and when snatching incidents happen. A 3D hex map changes by time of day, people report incidents anonymously, and it suggests lower-risk routes.",
+    image: "/safepath.png",
+    technologies: ["Next.js", "MapLibre GL", "Django REST", "PostgreSQL"],
+    liveLink: "https://chintai-bd.vercel.app/",
+    githubLink: "https://github.com/monaim3/SafePath",
+  },
+  {
     name: "Invoice Generator",
     description:
       "A React.js-based invoice generator for stalls to create, manage, and print/download detailed customer invoices with payment status, notes, and signature.",
@@ -21,15 +39,6 @@ const projects = [
     technologies: ["Next.js", "Tailwind", "Framer Motion"],
     liveLink: "https://smart-sohay.vercel.app/",
     githubLink: "https://github.com/monaim3/Smart-Sohay-Home",
-  },
-  {
-    name: "Crazy Devs",
-    description:
-      "Built a fully responsive startup agency portfolio website using Next.js, featuring one-click English-Arabic translation, optimized routing, and a sleek, modern UI for all devices.",
-    image: "/crazy-devs.jpeg",
-    technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    liveLink: "https://crazy-dev-gilt.vercel.app/en",
-    githubLink: "https://github.com/monaim3/Crazy-Devs",
   },
 ];
 
@@ -52,14 +61,14 @@ const Project = () => {
       </div>
       <div ref={container} className="main relative">
         {projects.map((project, i) => {
-          const targetScale = 1 - (projects.length - i) * 0.05;
+          const targetScale = 1 - (projects.length - i) * 0.03;
           return (
             <Card
               key={project.name}
               i={i}
               {...project}
               progress={scrollYProgress}
-              range={[i * 0.25, 1]}
+              range={[i / projects.length, 1]}
               targetScale={targetScale}
             />
           );

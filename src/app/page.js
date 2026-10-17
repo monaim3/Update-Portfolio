@@ -1,5 +1,4 @@
 import Hero from "@/components/Hero";
-import About from "@/components/About";
 import Project from "@/components/Project";
 import Service from "@/components/Service";
 import Skill from "@/components/Skill";
@@ -10,7 +9,6 @@ export default function Home() {
   return (
     <div>
       <Hero></Hero>
-      <About></About>
       <Skill></Skill>
       <Project></Project>
       <Service></Service>
