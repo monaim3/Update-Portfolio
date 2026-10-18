@@ -4,6 +4,7 @@ import { ArrowUp } from "lucide-react";
 
 const links = [
   { name: "Home", href: "/" },
+  { name: "Experience", href: "/#experience" },
   { name: "Projects", href: "/#project" },
   { name: "Contact", href: "/#contact" },
 ];

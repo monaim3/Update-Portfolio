@@ -9,8 +9,8 @@ const Hire = () => {
           Let's <span className="text-primary">Work</span> Together
         </h2>
         <p className="text-base md:text-lg text-gray-400 max-w-xl mx-auto">
-          Have a project in mind or an open frontend role? I'm available for
-          full-time positions and freelance work — let's talk.
+          Hiring a frontend engineer or have a product to build? I'm open to
+          full-time roles and freelance projects. Let's talk.
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <Link
@@ -20,15 +20,14 @@ const Hire = () => {
             <FaRegPaperPlane className="w-5 h-5" />
             Hire Me
           </Link>
-          <Link
-            href="https://drive.google.com/file/d/1u1s_tqmcC4ZCWAZN1r_WPIYE_w-j_UhP/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
+          <a
+            href="/Monaim-Mukul-CV.pdf"
+            download="Monaim-Mukul-CV.pdf"
             className="inline-flex items-center gap-2 border border-white/30 text-white px-7 py-4 rounded-lg font-semibold hover:bg-white/10 transition-colors"
           >
             <FaCloudDownloadAlt className="w-5 h-5" />
             Download CV
-          </Link>
+          </a>
         </div>
       </div>
     </section>

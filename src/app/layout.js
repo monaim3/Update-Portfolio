@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SmoothScroll from "@/components/SmoothScroll";
+import { siteUrl } from "@/lib/site";
 
 const rajdhani = Rajdhani({
   subsets: ["latin"],
@@ -10,7 +11,6 @@ const rajdhani = Rajdhani({
   variable: "--font-rajdhani",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 const description =
   "Monaim Mukul — Frontend Engineer and Software Developer in Dhaka building fast, responsive web apps with React, Next.js and Tailwind CSS.";
 
@@ -38,10 +38,29 @@ export const metadata = {
   },
 };
 
+// Structured data so search engines know this is Monaim's personal site
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Monaim Mukul",
+  jobTitle: "Frontend Engineer",
+  url: siteUrl,
+  image: `${siteUrl}/mukul-cutout.png`,
+  address: { "@type": "PostalAddress", addressLocality: "Dhaka", addressCountry: "BD" },
+  worksFor: { "@type": "Organization", name: "AmarSolution" },
+  alumniOf: "Dhaka International University",
+  knowsAbout: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Django", "PostgreSQL"],
+  sameAs: ["https://github.com/monaim3", "https://www.linkedin.com/in/monaimmukul/"],
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${rajdhani.variable} antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
         <SmoothScroll />
         <Header></Header>
         {children}

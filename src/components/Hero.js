@@ -30,6 +30,12 @@ const orbitIcons = [
   { name: "Framer Motion", Icon: SiFramer, color: "#ffffff" },
 ];
 
+const stats = [
+  { value: "2.5+", label: "Years experience" },
+  { value: "3", label: "Companies" },
+  { value: "4", label: "Live products" },
+];
+
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
   show: (i) => ({ opacity: 1, y: 0, transition: { delay: i * 0.12, duration: 0.6, ease: "easeOut" } }),
@@ -91,7 +97,7 @@ export default function Hero() {
             <motion.p variants={fadeUp} initial="hidden" animate="show" custom={2} className="text-gray-400 text-lg max-w-xl">
               I build fast, responsive and animated web apps with React,
               Next.js and Tailwind CSS — from QR code platforms and live
-              safety maps to invoice tools and smart-home dashboards.
+              safety maps to exam-prep and ERP products.
             </motion.p>
             <motion.div variants={fadeUp} initial="hidden" animate="show" custom={3} className="flex flex-wrap gap-4 pt-2">
               <Button asChild className="primary-color hover:opacity-90 text-white px-8 py-6 text-lg rounded-full shadow-[0_0_30px_rgba(250,2,79,0.45)]">
@@ -105,6 +111,21 @@ export default function Hero() {
                 <Link href="#contact">Contact Me</Link>
               </Button>
             </motion.div>
+            <motion.dl
+              variants={fadeUp}
+              initial="hidden"
+              animate="show"
+              custom={4}
+              className="flex flex-wrap gap-x-8 gap-y-4 pt-4"
+            >
+              {stats.map(({ value, label }) => (
+                <div key={label} className="border-l-2 border-primary pl-4">
+                  <dt className="sr-only">{label}</dt>
+                  <dd className="text-3xl font-bold text-white leading-none">{value}</dd>
+                  <dd className="text-sm text-gray-400 mt-1">{label}</dd>
+                </div>
+              ))}
+            </motion.dl>
           </div>
 
           {/* Right Content: 3D stage */}

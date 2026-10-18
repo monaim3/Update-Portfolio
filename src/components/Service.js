@@ -1,25 +1,23 @@
-import { Code2 } from "lucide-react";
-import { FaWordpress } from "react-icons/fa";
-import { SiWebflow } from "react-icons/si";
+import { Code2, Layers, Sparkles } from "lucide-react";
 
 const services = [
   {
-    title: "Front-End Development",
+    title: "Frontend Engineering",
     description:
-      "Pixel-perfect, responsive interfaces built with React, Next.js and Tailwind CSS — fast, accessible and easy to maintain.",
+      "Pixel-perfect, responsive interfaces in React, Next.js and TypeScript. Fast, accessible, SEO-friendly and easy to maintain.",
     Icon: Code2,
   },
   {
-    title: "WordPress",
+    title: "Full-Stack Web Apps",
     description:
-      "Custom, easy-to-edit WordPress sites so you can manage your own content without touching code.",
-    Icon: FaWordpress,
+      "Dashboards, ERP and e-commerce features, SaaS products. I connect the UI to REST APIs, auth, payments and databases.",
+    Icon: Layers,
   },
   {
-    title: "Webflow",
+    title: "Interactive UI & Motion",
     description:
-      "Visually polished Webflow sites with smooth interactions, CMS collections and clean, responsive layouts.",
-    Icon: SiWebflow,
+      "Smooth animations, 3D touches and interactive maps with Framer Motion, Three.js and MapLibre, without slowing the page down.",
+    Icon: Sparkles,
   },
 ];
 

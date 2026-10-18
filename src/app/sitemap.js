@@ -1,4 +1,4 @@
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+import { siteUrl } from "@/lib/site";
 
 export default function sitemap() {
   return [{ url: siteUrl, lastModified: new Date(), priority: 1 }];

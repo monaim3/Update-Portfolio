@@ -14,6 +14,9 @@ import {
   SiGit,
   SiMongodb,
   SiRedux,
+  SiDjango,
+  SiPostgresql,
+  SiFramer,
 } from "react-icons/si";
 
 const skills = [
@@ -76,6 +79,21 @@ const skills = [
     name: "Redux",
     icon: <SiRedux className="w-10 h-10" style={{ color: "#764ABC" }} />,
     color: "border-purple-500",
+  },
+  {
+    name: "Framer Motion",
+    icon: <SiFramer className="w-10 h-10 text-white" />,
+    color: "border-pink-500",
+  },
+  {
+    name: "Django",
+    icon: <SiDjango className="w-10 h-10" style={{ color: "#44B78B" }} />,
+    color: "border-emerald-600",
+  },
+  {
+    name: "PostgreSQL",
+    icon: <SiPostgresql className="w-10 h-10" style={{ color: "#4169E1" }} />,
+    color: "border-blue-600",
   },
 ];
 

@@ -7,7 +7,7 @@ const projects = [
   {
     name: "QRCenter",
     description:
-      "A full QR code platform: pick from 12 types (URL, vCard, PDF, Wi-Fi, menu and more), add content, then customize colors, frames and logos with a live phone preview. Includes Stripe payments.",
+      "A QR code SaaS with 12 code types (URL, vCard, PDF, Wi-Fi, menu…). A 3-step builder lets users style colors, frames and logos with a live phone preview, then pay with Stripe. Redux keeps the multi-step state in sync.",
     image: "/qr-center.png",
     technologies: ["Next.js", "Redux Toolkit", "Stripe", "Tailwind CSS"],
     liveLink: "https://qr-code-red-seven.vercel.app/generator",
@@ -16,7 +16,7 @@ const projects = [
   {
     name: "SafePath",
     description:
-      "A full-stack Bengali/English safety map for Dhaka showing where and when snatching incidents happen. A 3D hex map changes by time of day, people report incidents anonymously, and it suggests lower-risk routes.",
+      "Full-stack safety map for Dhaka. Anonymous snatching reports are grouped into H3 hexagons on a 3D map that changes by time of day. Includes a moderation queue, push alerts for watched areas and privacy-first analytics.",
     image: "/safepath.png",
     technologies: ["Next.js", "MapLibre GL", "Django REST", "PostgreSQL"],
     liveLink: "https://chintai-bd.vercel.app/",
@@ -25,20 +25,20 @@ const projects = [
   {
     name: "Invoice Generator",
     description:
-      "A React.js-based invoice generator for stalls to create, manage, and print/download detailed customer invoices with payment status, notes, and signature.",
+      "Built for Milon Motors to replace hand-written bills. Sellers log in, add items in an Ag-Grid table with auto totals and amount-in-words, then print or export a branded PDF. Works offline as an installable app.",
     image: "/milonmotors.png",
-    technologies: ["React", "Ag-Grid-React", "Pdfmake"],
+    technologies: ["React", "Ag-Grid", "Pdfmake", "PWA"],
     liveLink: "https://invoice-generator24.netlify.app/",
     githubLink: "https://github.com/monaim3/Invoice-generator",
   },
   {
-    name: "Smart Sohay Home",
+    name: "Smart Sohay",
     description:
-      "A modern smart home automation web app built with Next.js, featuring smooth animations, responsive design, and an intuitive UI for controlling home devices.",
+      "Bengali exam-prep platform for SSC, HSC, admission and job exams, with a question bank, live exams, doubt solving and flashcards. Trusted by 700K+ students. Built with Next.js, React Query and Google sign-in.",
     image: "/smart-home.png",
-    technologies: ["Next.js", "Tailwind", "Framer Motion"],
+    technologies: ["Next.js", "React Query", "Three.js", "Tailwind"],
     liveLink: "https://smart-sohay.vercel.app/",
-    githubLink: "https://github.com/monaim3/Smart-Sohay-Home",
+    githubLink: "https://github.com/monaim3/smart-soha-v1",
   },
 ];
 
