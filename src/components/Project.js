@@ -51,7 +51,7 @@ const Project = () => {
 
   return (
     <section className="relative bg-black" id="project">
-      <div className="pt-16 pb-16 md:pb-12 bg-black">
+      <div className="pt-16 md:pt-20 bg-black">
         <h2 className="text-center text-4xl md:text-5xl font-bold bg-gradient-to-r from-white to-pink-500 bg-clip-text text-transparent">
           Featured Projects
         </h2>
@@ -59,7 +59,7 @@ const Project = () => {
           A few things I've designed and built recently
         </p>
       </div>
-      <div ref={container} className="main relative">
+      <div ref={container} className="main relative md:mt-6 pb-2 md:pb-6">
         {projects.map((project, i) => {
           const targetScale = 1 - (projects.length - i) * 0.03;
           return (

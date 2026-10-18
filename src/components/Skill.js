@@ -125,7 +125,7 @@ const SkillCard = ({ name, icon, color }) => {
 
 export default function Skill() {
   return (
-    <section className="py-16 relative overflow-hidden section-bg">
+    <section className="py-16 md:py-20 relative overflow-hidden section-bg">
       <div className="max-w-7xl mx-auto px-4 relative">
         <div className="text-center">
           <motion.h2
@@ -149,13 +149,13 @@ export default function Skill() {
         </div>
 
         <div
-          className="relative mx-auto overflow-hidden mt-6"
+          className="relative mx-auto overflow-hidden mt-12 md:mt-16"
           style={{
             maskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
             WebkitMaskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
           }}
         >
-          <div className="flex items-center min-h-[200px]">
+          <div className="flex items-center">
             <motion.div
               className="flex gap-6 pr-6 w-max"
               style={{ willChange: "transform" }}

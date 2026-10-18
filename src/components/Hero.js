@@ -30,12 +30,6 @@ const orbitIcons = [
   { name: "Framer Motion", Icon: SiFramer, color: "#ffffff" },
 ];
 
-const stats = [
-  { value: "2.5+", label: "Years experience" },
-  { value: "3", label: "Companies" },
-  { value: "4", label: "Live products" },
-];
-
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
   show: (i) => ({ opacity: 1, y: 0, transition: { delay: i * 0.12, duration: 0.6, ease: "easeOut" } }),
@@ -111,21 +105,6 @@ export default function Hero() {
                 <Link href="#contact">Contact Me</Link>
               </Button>
             </motion.div>
-            <motion.dl
-              variants={fadeUp}
-              initial="hidden"
-              animate="show"
-              custom={4}
-              className="flex flex-wrap gap-x-8 gap-y-4 pt-4"
-            >
-              {stats.map(({ value, label }) => (
-                <div key={label} className="border-l-2 border-primary pl-4">
-                  <dt className="sr-only">{label}</dt>
-                  <dd className="text-3xl font-bold text-white leading-none">{value}</dd>
-                  <dd className="text-sm text-gray-400 mt-1">{label}</dd>
-                </div>
-              ))}
-            </motion.dl>
           </div>
 
           {/* Right Content: 3D stage */}

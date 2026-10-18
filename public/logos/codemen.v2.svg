@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Codemen logo">
+  <rect width="600" height="600" rx="110" fill="#ffffff"/>
+  <g transform="translate(124 90) scale(0.82)">
+    <!-- gray blocks -->
+    <rect x="0" y="52" width="113" height="113" fill="#464748"/>
+    <path d="M0 232h113v120H0z M0 352h72l36 125H57z" fill="#464748"/>
+    <!-- red block with white cut-outs -->
+    <path d="M187 0h193a65 65 0 0 1 65 65v387a65 65 0 0 1-65 65H187z" fill="#E61E27"/>
+    <rect x="256" y="52" width="112" height="113" fill="#ffffff"/>
+    <rect x="256" y="232" width="112" height="120" fill="#ffffff"/>
+    <path d="M296 351h72l-55 126h-52z" fill="#ffffff"/>
+  </g>
+</svg>

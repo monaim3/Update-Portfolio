@@ -41,7 +41,7 @@ export default function Contact() {
   return (
     <section id="contact" className="section-bg scroll-mt-4">
       <ToastContainer position="top-right" autoClose={5000} />
-      <div className="container mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="container mx-auto px-4 py-16 md:py-20 grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Contact Form */}
         <div className="bg-black/30 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-white/10">
           <h2 className="text-4xl font-bold text-white mb-8 border-b border-white/20 pb-4">

@@ -4,7 +4,7 @@ import { FaCloudDownloadAlt, FaRegPaperPlane } from "react-icons/fa";
 const Hire = () => {
   return (
     <section className="bg-black">
-      <div className="container text-center mx-auto px-4 py-24">
+      <div className="container text-center mx-auto px-4 py-16 md:py-20">
         <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">
           Let's <span className="text-primary">Work</span> Together
         </h2>
