@@ -1,17 +1,21 @@
 "use client";
 import { useEffect } from "react";
+import { frame, cancelFrame } from "framer-motion";
 import Lenis from "@studio-freight/lenis";
+import { setLenis } from "@/lib/lenis";
 
 export default function SmoothScroll() {
   useEffect(() => {
     const lenis = new Lenis();
-    let frame;
+    setLenis(lenis);
 
-    function raf(time) {
-      lenis.raf(time);
-      frame = requestAnimationFrame(raf);
+    // Run Lenis inside framer-motion's frame loop so scroll-linked animations
+    // (the stacked project cards) read the same scroll position in the same frame.
+    // A separate requestAnimationFrame loop makes them lag a frame and shake.
+    function update({ timestamp }) {
+      lenis.raf(timestamp);
     }
-    frame = requestAnimationFrame(raf);
+    frame.update(update, true);
 
     // Smooth-scroll in-page links like "/#contact" or "#about"
     function onClick(e) {
@@ -28,7 +32,8 @@ export default function SmoothScroll() {
 
     return () => {
       document.removeEventListener("click", onClick);
-      cancelAnimationFrame(frame);
+      cancelFrame(update);
+      setLenis(null);
       lenis.destroy();
     };
   }, []);

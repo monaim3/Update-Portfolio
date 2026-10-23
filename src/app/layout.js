@@ -47,7 +47,7 @@ const personJsonLd = {
   url: siteUrl,
   image: `${siteUrl}/mukul-cutout.png`,
   address: { "@type": "PostalAddress", addressLocality: "Dhaka", addressCountry: "BD" },
-  worksFor: { "@type": "Organization", name: "AmarSolution" },
+  worksFor: { "@type": "Organization", name: "Pioneer Alpha", url: "https://pioneeralpha.com" },
   alumniOf: "Dhaka International University",
   knowsAbout: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Django", "PostgreSQL"],
   sameAs: ["https://github.com/monaim3", "https://www.linkedin.com/in/monaimmukul/"],

@@ -6,6 +6,8 @@
   justify-content: center;
   position: sticky;
   top: max(0px, calc((100vh - 620px) / 2));
+  /* svh ignores the mobile address bar, so the stuck cards don't jump when it hides */
+  top: max(0px, calc((100svh - 620px) / 2));
   padding: 0 16px;
 }
 
@@ -21,6 +23,9 @@
   transform-origin: top;
   overflow: hidden;
   box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.6);
+  /* own GPU layer: scaling while scrolling won't re-paint text and images each frame */
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .main {
@@ -31,6 +36,7 @@
   .cardContainer {
     height: auto;
     min-height: 100vh;
+    min-height: 100svh;
     top: 0;
     padding: 24px 16px;
   }

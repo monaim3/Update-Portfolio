@@ -2,7 +2,7 @@
 import Image from "next/image";
 import styles from "./style.module.css";
 import { useTransform, motion } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Lock } from "lucide-react";
 
 const Card = ({
   i,
@@ -73,15 +73,22 @@ const Card = ({
                 <ExternalLink size={20} />
                 Live Demo
               </a>
-              <a
-                href={githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-5 py-3 border border-white/30 text-white rounded-lg hover:bg-white/10 transition-colors"
-              >
-                <Github size={20} />
-                Code
-              </a>
+              {githubLink ? (
+                <a
+                  href={githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-5 py-3 border border-white/30 text-white rounded-lg hover:bg-white/10 transition-colors"
+                >
+                  <Github size={20} />
+                  Code
+                </a>
+              ) : (
+                <span className="flex items-center gap-2 px-5 py-3 border border-white/15 text-gray-400 rounded-lg">
+                  <Lock size={18} />
+                  Company project
+                </span>
+              )}
             </div>
           </div>
         </div>

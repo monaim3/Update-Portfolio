@@ -7,16 +7,30 @@ import { ArrowUpRight } from "lucide-react";
 
 const jobs = [
   {
+    company: "Pioneer Alpha",
+    logo: "/logos/pioneeralpha.v2.png",
+    logoShape: "rounded-[22%]",
+    role: "Frontend Engineer",
+    period: "Feb 2026 – Present",
+    start: [2026, 2],
+    current: true,
+    points: [
+      "Built the admin dashboard for Smart Sohay, an exam-prep platform trusted by 700K+ students, covering a 6 lakh+ question bank, model tests, live exams, subscriptions and coupons, and sales analytics.",
+      "Built role-based access control driven by database permissions, reusable table and modal components, Excel import/export with a multi-step column-mapping wizard, and AI-assisted question extraction and fixing.",
+      "Built the public website smartsohay.com and the frontend of SohayAI, an AI chatbot that answers students from the question bank.",
+    ],
+    tags: ["Next.js 15", "React", "Redux Toolkit", "RTK Query", "Tailwind CSS", "RBAC"],
+  },
+  {
     company: "AmarSolution",
     logo: "/logos/amarsolution.v2.png",
     logoShape: "rounded-[27%]",
-    role: "Frontend Developer",
-    period: "Jun 2025 – Present",
-    start: [2025, 6],
-    current: true,
+    role: "Software Developer",
+    period: "Jun 2025 – Jan 2026",
+    duration: "8 mos",
     points: [
-      "Build and maintain ERP and e-commerce platforms with React.js and Next.js.",
-      "Integrate REST APIs and ship dynamic features with cross-functional teams, with a focus on performance.",
+      "Built and maintained ERP and e-commerce platforms with React.js and Next.js.",
+      "Integrated REST APIs and shipped dynamic features with cross-functional teams, with a focus on performance.",
     ],
     tags: ["Next.js", "React", "REST APIs", "ERP"],
   },
