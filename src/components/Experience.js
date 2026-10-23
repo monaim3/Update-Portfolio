@@ -39,8 +39,8 @@ const jobs = [
     logo: "/logos/imagine.v2.png",
     logoShape: "rounded-full",
     role: "Frontend Developer",
-    period: "Sep 2024 – May 2025",
-    duration: "10 mos",
+    period: "Jun 2024 – May 2025",
+    duration: "1 yr",
     points: [
       "Developed responsive web apps with React.js and Next.js that perform well across devices and browsers.",
       "Worked with designers and backend developers in an Agile team to turn designs into user-friendly interfaces.",
@@ -53,7 +53,7 @@ const jobs = [
     logoShape: "rounded-[18%]",
     role: "Frontend Developer",
     type: "Internship",
-    period: "Mar 2024 – Aug 2024",
+    period: "Jan 2024 – Jun 2024",
     duration: "6 mos",
     points: [
       "Built front-end features with Next.js, JavaScript and Tailwind CSS, improving UI quality and performance.",

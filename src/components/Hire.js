@@ -21,8 +21,9 @@ const Hire = () => {
             Hire Me
           </Link>
           <a
-            href="/Monaim-Mukul-CV.pdf"
-            download="Monaim-Mukul-CV.pdf"
+            href="https://drive.google.com/file/d/16nQGrfw4wVZ4zBFwPFrN2wVowW4g7cn_/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border border-white/30 text-white px-7 py-4 rounded-lg font-semibold hover:bg-white/10 transition-colors"
           >
             <FaCloudDownloadAlt className="w-5 h-5" />
